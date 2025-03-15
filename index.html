@@ -5,13 +5,20 @@
     <link rel="icon" type="image/svg+xml" href="./vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>점심 뭐 먹지</title>
-    <script type="module" crossorigin src="/javascript-lunch/assets/index-cDFvgOdh.js"></script>
-    <link rel="stylesheet" crossorigin href="/javascript-lunch/assets/css/index.css">
+    <!-- CSS 파일들은 빌드 시 자동으로 처리됩니다 -->
   </head>
   <body>
     <!-- GNB -->
     <div class="app" id="app">
       <main>
+        <!-- 음식점 토글 -->
+        <section class="restaurant-toggle-container" id="restaurant-toggle-container">
+          <div class="restaurant-toggle">
+            <h3 class="text-subtitle restaurant-toggle-item active" id="all-restaurants">모든 음식점</h3>
+            <h3 class="text-subtitle restaurant-toggle-item" id="favorite-restaurants">자주 가는 음식점</h3>
+          </div>
+        </section>
+
         <!-- 음식점 목록 -->
         <section class="restaurant-list-container">
           <ul class="restaurant-list" id="restaurant-list"></ul>
@@ -20,5 +27,6 @@
         <!-- 음식점 추가 모달 -->
       </main>
     </div>
+    <!-- 빌드 시 Vite가 자동으로 스크립트를 추가합니다 -->
   </body>
 </html>
